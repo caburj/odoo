@@ -212,6 +212,7 @@ class ProductProduct(models.Model):
                 "write_date": self.write_date.timestamp(),
                 "self_order_available": self.self_order_available,
                 "barcode": self.barcode,
+                "image_data": "base64 encoded image data"
             }
 
     def _get_self_order_data(self, pos_config: PosConfig) -> List[Dict]:

@@ -67,7 +67,7 @@
                         <h2 t-esc="category.name" class="pt-4 pb-2 px-3 mb-4 mx-n3 bg-200 display-6 fw-bold"/>
                         <div class="o-so-products-row">
                             <t t-foreach="availableProducts" t-as="product" t-key="product.id">
-                                <ProductCard product="product" currentProductCard="product.id === selfOrder.lastEditedProductId and currentProductCard"/>
+                                <ProductCard product="product" currentProductCard="product.id === selfOrder.lastEditedProductId and currentProductCard" imgSrc="prouduct.image_data"/>
                             </t>
                         </div>
                     </t>
